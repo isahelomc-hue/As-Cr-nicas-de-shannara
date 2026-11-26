@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Projeto escolar interativo sobre As Crônicas de Shannara.">
+    <title>As Crônicas de Shannara | Guia da série</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#inicio">✦ SHANNARA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="Abrir menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#sobre">A série</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#universo">Universo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#personagens">Personagens</a>\n
+                        <li class="nav-item"><a class="nav-link" href="#viloes">Vilões</a></li>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#interacao">Minha lista</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="inicio" class="hero">
+        <div class="hero-shade"></div>
+        <div class="container hero-content">
+            <p class="eyebrow">UM MUNDO DE MAGIA • DESTINO • CORAGEM</p>
+            <h1>AS CRÔNICAS<br><span>DE SHANNARA</span></h1>
+            <p class="hero-copy">Quando a escuridão ameaça o mundo, uma jornada extraordinária começa.</p>
+            <a class="btn btn-gold" href="#sobre">Explorar o universo <span>↗</span></a>
+        </div>
+        <div class="hero-mark">ᛟ</div>
+    </header>
+
+    <main>
+        <section id="sobre" class="section-pad">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">01 / CONHEÇA A HISTÓRIA</span>
+                    <h2>Uma fantasia épica</h2>
+                </div>
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-7">
+                        <p class="lead-copy">As Crônicas de Shannara é uma série de fantasia e aventura ambientada em um futuro distante, no qual a magia voltou a fazer parte do mundo.</p>
+                        <p>A história acompanha personagens que precisam proteger as Quatro Terras de forças ameaçadoras. Elfos, humanos, trolls e outras criaturas dividem esse universo, onde antigas lendas, escolhas difíceis e coragem têm grande importância.</p>
+                        <p>A produção para a televisão foi inspirada na obra literária de <strong>Terry Brooks</strong>. A adaptação apresenta aventuras, conflitos e a busca por esperança diante de perigos que podem mudar o destino de todos.</p>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="quote-panel">
+                            <span class="quote-symbol">✧</span>
+                            <p>“O destino de um mundo pode depender da coragem de poucas pessoas.”</p>
+                            <small>IDEIA central do universo de Shannara</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="universo" class="section-pad dark-section">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">02 / O CENÁRIO</span>
+                    <h2>As Quatro Terras</h2>
+                    <p>Um mundo de povos diferentes, paisagens misteriosas e magia antiga.</p>
+                </div>
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <article class="world-card">
+                            <div class="world-icon">🌿</div>
+                            <h3>Natureza e ruínas</h3>
+                            <p>Florestas, construções antigas e lugares que guardam pistas sobre o passado.</p>
+                        </article>
+                    </div>
+                    <div class="col-md-4">
+                        <article class="world-card">
+                            <div class="world-icon">🧝</div>
+                            <h3>Povos distintos</h3>
+                            <p>Elfos, humanos, trolls e outras criaturas formam sociedades com histórias próprias.</p>
+                        </article>
+                    </div>
+                    <div class="col-md-4">
+                        <article class="world-card">
+                            <div class="world-icon">✨</div>
+                            <h3>Magia e legado</h3>
+                            <p>Conhecimentos antigos e objetos especiais influenciam os caminhos dos personagens.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="personagens" class="section-pad">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">03 / QUEM FAZ PARTE DA JORNADA</span>
+                    <h2>Personagens em destaque</h2>
+                    <p>Use os filtros para explorar os personagens apresentados neste guia.</p>
+                </div>
+                <div class="filter-row mb-4">
+                    <button class="filter-btn active" data-filter="todos">Todos</button>
+                    <button class="filter-btn" data-filter="elfo">Elfos</button>
+                    <button class="filter-btn" data-filter="humano">Humanos</button>
+                </div>
+                <div class="row g-3" id="characterGrid">
+                    <div class="col-md-6 col-lg-4 character-wrap" data-kind="elfo">
+                        <article class="character-card">
+                            <img class="character-photo" src="img/will.jpeg" alt="Wil Ohmsford, interpretado por Austin Butler" loading="lazy">
+                            <div class="character-info"><span class="tag">MEIO-ELFO</span>
+                                <h3>Wil Ohmsford</h3>
+                                <p>Um jovem ligado à linhagem Shannara que descobre ter um papel importante na proteção das Quatro Terras.</p>
+                                <div class="actor-name">Interpretado por <strong>Austin Butler</strong></div><button class="favorite-btn" data-name="Wil Ohmsford">♡ Adicionar aos favoritos</button></div>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-4 character-wrap" data-kind="elfo">
+                        <article class="character-card">
+                            <img class="character-photo" src="img/amberle.jpeg" alt="Amberle Elessedil, interpretada por Poppy Drayton" loading="lazy">
+                            <div class="character-info"><span class="tag">ELFA</span>
+                                <h3>Amberle Elessedil</h3>
+                                <p>Uma princesa élfica determinada, que enfrenta desafios e responsabilidades muito maiores do que imaginava.</p>
+                                <div class="actor-name">Interpretado por <strong>Poppy Drayton</strong></div><button class="favorite-btn" data-name="Amberle Elessedil">♡ Adicionar aos favoritos</button></div>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-4 character-wrap" data-kind="humano">
+                        <article class="character-card">
+                            <img class="character-photo" src="img/eretria.jpeg" alt="Eretria, interpretada por Ivana Baquero" loading="lazy">
+                            <div class="character-info"><span class="tag">HUMANA</span>
+                                <h3>Eretria</h3>
+                                <p>Uma rover independente e habilidosa, que se torna uma aliada importante na missão de salvar as Quatro Terras.</p>
+                                <div class="actor-name">Interpretado por <strong>Ivana Baquero</strong></div><button class="favorite-btn" data-name="Eretria">♡ Adicionar aos favoritos</button></div>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-4 character-wrap" data-kind="humano">
+                        <article class="character-card">
+                            <img class="character-photo" src="img/druida.jpeg" alt="Allanon, o druida interpretado por Manu Bennett" loading="lazy">
+                            <div class="character-info"><span class="tag">DRUIDA</span>
+                                <h3>Allanon</h3>
+                                <p>O último druida, sábio e poderoso, que orienta Wil e os demais na missão de proteger as Quatro Terras.</p>
+                                <div class="actor-name">Interpretado por <strong>Manu Bennett</strong></div><button class="favorite-btn" data-name="Allanon">♡ Adicionar aos favoritos</button></div>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-4 character-wrap" data-kind="elfo">
+                        <article class="character-card">
+                            <img class="character-photo" src="img/ander.jpeg" alt="Ander Elessedil, interpretado por Aaron Jakubenko" loading="lazy">
+                            <div class="character-info"><span class="tag">ELFO</span>
+                                <h3>Ander Elessedil</h3>
+                                <p>Príncipe élfico que amadurece ao assumir responsabilidades pelo futuro de seu povo.</p>
+                                <div class="actor-name">Interpretado por <strong>Aaron Jakubenko</strong></div><button class="favorite-btn" data-name="Ander Elessedil">♡ Adicionar aos favoritos</button></div>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-4 character-wrap" data-kind="elfo">
+                        <article class="character-card">
+                            <img class="character-photo" src="img/Bandon.jpeg" alt="Bandon, interpretado por Marcus Vanco" loading="lazy">
+                            <div class="character-info"><span class="tag">ELFO</span>
+                                <h3>Bandon</h3>
+                                <p>Jovem elfo com o dom de ter visões, cuja trajetória toma rumos importantes e perigosos.</p>
+                                <div class="actor-name">Interpretado por <strong>Marcus Vanco</strong></div><button class="favorite-btn" data-name="Bandon">♡ Adicionar aos favoritos</button></div>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-4 character-wrap" data-kind="humano">
+                        <article class="character-card">
+                            <img class="character-photo" src="img/Mareth.jpeg" alt="Mareth, interpretada por Malese Jow" loading="lazy">
+                            <div class="character-info"><span class="tag">MEIO-ELFA</span>
+                                <h3>Mareth Ravenlock</h3>
+                                <p>Uma jovem com habilidades mágicas que aparece na segunda temporada e procura respostas sobre sua origem.</p>
+                                <div class="actor-name">Interpretado por <strong>Malese Jow</strong></div><button class="favorite-btn" data-name="Mareth Ravenlock">♡ Adicionar aos favoritos</button></div>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-4 character-wrap" data-kind="humano">
+                        <article class="character-card">
+                            <img class="character-photo" src="img/lyria.jpeg" alt="Lyria, interpretada por Vanessa Morgan" loading="lazy">
+                            <div class="character-info"><span class="tag">HUMANA</span>
+                                <h3>Lyria</h3>
+                                <p>Uma mulher misteriosa que se revela princesa de Leah e tem papel importante na segunda temporada.</p>
+                                <div class="actor-name">Interpretado por <strong>Vanessa Morgan</strong></div><button class="favorite-btn" data-name="Lyria">♡ Adicionar aos favoritos</button></div>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-4 character-wrap" data-kind="humano">
+                        <article class="character-card">
+                            <img class="character-photo" src="https://m.media-amazon.com/images/M/MV5BZDg0OWIyZmUtMzc3Ni00MmVhLTlhYmItMTcwYWUxOTZlYzMyXkEyXkFqcGc%40._V1_.jpg" alt="Garet Jax, interpretado por Gentry White" loading="lazy">
+                            <div class="character-info"><span class="tag">CAÇADOR DE RECOMPENSAS</span>
+                                <h3>Garet Jax</h3>
+                                <p>Um habilidoso caçador de recompensas conhecido nas Quatro Terras como Mestre das Armas.</p>
+                                <div class="actor-name">Interpretado por <strong>Gentry White</strong></div><button class="favorite-btn" data-name="Garet Jax">♡ Adicionar aos favoritos</button></div>
+                        </article>
+                    </div>
+                </div>
+                <p class="small-note mt-3">Aqui estão os nove personagens principais da adaptação televisiva, incluindo os integrantes centrais das duas temporadas. Allanon é o druida que orienta o grupo.</p>
+                <p class="image-credits">Imagens: <a href="https://www.shannarawiki.net/wil-ohmsford/" target="_blank" rel="noopener">Wil</a> · <a href="https://celebmafia.com/poppy-drayton-shannara-chronicles-2016-stills-promos-481700/" target="_blank" rel="noopener">Amberle</a>                    · <a href="https://www.bustle.com/articles/133589-who-is-eretria-on-the-shannara-chronicles-ivana-baquero-is-no-stranger-to-the-genre" target="_blank" rel="noopener">Eretria</a> · <a href="https://www.fernsehserien.de/news/shannara-manu-bennett-wird-zum-druiden"
+                        target="_blank" rel="noopener">Allanon</a></p>
+            </div>
+        </section>
+
+        <section id="viloes" class="section-pad villain-section">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">04 / AS AMEAÇAS DAS QUATRO TERRAS</span>
+                    <h2>Vilões e antagonistas</h2>
+                    <p>Conheça os principais adversários da série e entenda como cada um representa um tipo diferente de ameaça.</p>
+                </div>
+                <div class="row g-3">
+                    <div class="col-md-6 col-lg-3">
+                        <article class="character-card villain-card">
+                            <img class="character-photo" src="https://images.squarespace-cdn.com/content/v1/5b981bb65ffd20b0d6aef3f2/1710126381534-SXUG3UY2T2DIRD7P7TRX/LesChroniquesDeShannara_LesPersonnages_DagdaMor-thumb-700xauto-191722.jpg?format=1500w" alt="Dagda Mor, antagonista da primeira temporada"
+                                loading="lazy">
+                            <div class="character-info"><span class="tag villain-tag">VILÃO PRINCIPAL • 1ª TEMPORADA</span>
+                                <h3>Dagda Mor</h3>
+                                <p>Antigo druida élfico corrompido e transformado em demônio. Busca enfraquecer a Ellcrys e libertar forças demoníacas.</p>
+                                <div class="actor-name">Interpretado por <strong>Jed Brophy</strong></div><span class="classification">Classificação: ameaça sobrenatural</span></div>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <article class="character-card villain-card">
+                            <img class="character-photo" src="https://fr.web.img4.acsta.net/pictures/17/10/16/14/32/5191756.jpg" alt="Bandon, interpretado por Marcus Vanco" loading="lazy">
+                            <div class="character-info"><span class="tag villain-tag">ANTAGONISTA • 2ª TEMPORADA</span>
+                                <h3>Bandon</h3>
+                                <p>O jovem elfo com o dom das visões é corrompido pelas forças das trevas e passa a ajudar no retorno do Warlock Lord.</p>
+                                <div class="actor-name">Interpretado por <strong>Marcus Vanco</strong></div><span class="classification">Classificação: antagonista corrompido</span></div>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <article class="character-card villain-card">
+                            <img class="character-photo" src="https://www.serienjunkies.de/assets/images/33/75/33075140-der-warlock-lord-manu-bennett-spike-tv-3t7a.jpg" alt="Warlock Lord, interpretado por Manu Bennett" loading="lazy">
+                            <div class="character-info"><span class="tag villain-tag">GRANDE AMEAÇA • 2ª TEMPORADA</span>
+                                <h3>Warlock Lord</h3>
+                                <p>Uma poderosa força das trevas que Bandon tenta trazer de volta. Sua volta ameaça mergulhar as Quatro Terras no caos.</p>
+                                <div class="actor-name">Interpretado por <strong>Manu Bennett</strong></div><span class="classification">Classificação: ameaça sobrenatural</span></div>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <article class="character-card villain-card">
+                            <img class="character-photo" src="https://charactermedia.com/wp-content/uploads/2019/01/desmondchiam.jpg" alt="General Riga, líder do Crimson" loading="lazy">
+                            <div class="character-info"><span class="tag villain-tag">ANTAGONISTA • 2ª TEMPORADA</span>
+                                <h3>General Riga</h3>
+                                <p>Líder do grupo Crimson, acredita que a magia deve ser eliminada e persegue aqueles que a utilizam.</p>
+                                <div class="actor-name">Interpretado por <strong>Desmond Chiam</strong></div><span class="classification">Classificação: antagonista político e militar</span></div>
+                        </article>
+                    </div>
+                </div>
+                <div class="villain-note"><strong>Entenda a classificação:</strong> “ameaça sobrenatural” indica forças ligadas à magia e aos demônios; “antagonista corrompido” descreve alguém que muda de lado por influência das trevas; “antagonista político e militar” representa
+                    um conflito causado por poder, ideologia e organização.</div>
+                <p class="image-credits mt-3">Imagens dos personagens: <a href="https://www.costumedesign.co.nz/schwane" target="_blank" rel="noopener">Dagda Mor</a> · <a href="https://www.allocine.fr/personne/fichepersonne-706845/photos/detail/" target="_blank" rel="noopener">Bandon</a>                    · <a href="https://www.serienjunkies.de/" target="_blank" rel="noopener">Warlock Lord</a> · <a href="https://charactermedia.com/desmond-chiam-on-landing-his-childhood-fantasy-role-in-shannara-chronicles/" target="_blank" rel="noopener">General Riga</a></p>
+            </div>
+        </section>
+
+        <section class="section-pad seasons-section">
+            <div class="container">
+                <div class="row align-items-center g-4">
+                    <div class="col-lg-6">
+                        <span class="eyebrow">05 / A PRODUÇÃO</span>
+                        <h2>Da literatura para a televisão</h2>
+                        <p>A série adapta elementos do universo criado por Terry Brooks. Sua narrativa mistura fantasia, aventura e drama, apresentando uma nova geração de heróis diante de ameaças antigas.</p>
+                        <p>A adaptação televisiva teve duas temporadas. Para conhecer melhor a história, vale observar como os personagens amadurecem e como suas decisões afetam o destino das Quatro Terras.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="season-stats">
+                            <div><strong>2</strong><span>temporadas</span></div>
+                            <div><strong>2016</strong><span>estreia da série</span></div>
+                            <div><strong>Ficção Científica</strong><span>gênero principal</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="interacao" class="section-pad dark-section">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">06 / SUA EXPERIÊNCIA</span>
+                    <h2>Monte sua lista</h2>
+                    <p>Salve seus personagens preferidos e registre sua opinião sobre o universo da série.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-5">
+                        <div class="interactive-panel h-100">
+                            <h3>Meus favoritos</h3>
+                            <p class="muted">Clique em “Adicionar aos favoritos” nos cards.</p>
+                            <ul id="favoriteList" class="favorite-list">
+                                <li class="empty-state">Você ainda não adicionou ninguém.</li>
+                            </ul>
+                            <p class="counter"><span id="favoriteCount">0</span> personagem(ns) salvo(s)</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <form id="reviewForm" class="interactive-panel" novalidate>
+                            <h3>Deixe sua opinião</h3>
+                            <div class="mb-3">
+                                <label for="visitorName" class="form-label">Seu nome</label>
+                                <input id="visitorName" class="form-control" type="text" placeholder="Digite seu nome" required minlength="2">
+                                <div class="invalid-feedback">Informe um nome com pelo menos 2 caracteres.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="visitorOpinion" class="form-label">O que mais chamou sua atenção?</label>
+                                <textarea id="visitorOpinion" class="form-control" rows="3" placeholder="Escreva sua opinião..." required minlength="5"></textarea>
+                                <div class="invalid-feedback">Escreva pelo menos 5 caracteres.</div>
+                            </div>
+                            <button class="btn btn-gold" type="submit">Enviar opinião</button>
+                            <div id="formMessage" class="form-message" role="status" aria-live="polite"></div>
+                        </form>
+                    </div>
+                </div>
+                <div class="reviews-area mt-4">
+                    <h3>Opiniões registradas nesta visita</h3>
+                    <div id="reviewList" class="row g-3">
+                        <p class="muted">Ainda não há opiniões cadastradas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
+            <span>✦ AS CRÔNICAS DE SHANNARA</span>
+            <span>Projeto escolar • Desenvolvimento Web</span>
+        </div>
+        <div class="container footer-credit">Conteúdo informativo produzido para fins educacionais. Obra literária original de Terry Brooks.</div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

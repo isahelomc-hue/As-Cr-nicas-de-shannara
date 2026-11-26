@@ -1,0 +1,25 @@
+PROJETO: AS CRÔNICAS DE SHANNARA
+Projeto escolar de Desenvolvimento de Aplicação Web.
+
+ARQUIVOS
+- index.html: estrutura e conteúdo do site.
+- style.css: identidade visual e responsividade.
+- script.js: filtros, favoritos, validação e opiniões.
+
+COMO ABRIR
+1. Extraia todos os arquivos da pasta compactada.
+2. Abra o arquivo index.html em um navegador.
+3. Para carregar o Bootstrap e as fontes, mantenha a conexão com a internet.
+
+REQUISITOS DO TRABALHO
+- HTML semântico e organizado.
+- CSS próprio e identidade visual.
+- Bootstrap 5 para navegação e grid responsivo.
+- JavaScript com eventos e manipulação do DOM.
+- Formulário com validação.
+- Funções e arrays para guardar favoritos e opiniões durante a visita.
+- Feedback visual para ações do usuário.
+
+OBSERVAÇÃO
+Os dados são mantidos em arrays enquanto a página está aberta. Ao atualizar ou fechar a página, os dados temporários são reiniciados, conforme a proposta de armazenamento temporário do enunciado.
+\nSEÇÃO DE VILÕES\nA página também apresenta quatro antagonistas importantes, classificados por tipo de ameaça e temporada: Dagda Mor, Bandon, Warlock Lord e General Riga.\n

@@ -1,0 +1,96 @@
+ :root {
+  --night:#101714; --deep:#17231d; --panel:#1d2b23; --gold:#d7b66f;
+  --cream:#eee9dc; --muted:#b8c0b4; --line:rgba(215,182,111,.25);
+}
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; scroll-padding-top:78px; }
+body { margin:0; background:#f2efe7; color:#263229; font-family:'Inter',sans-serif; line-height:1.7; }
+h1,h2,h3,.navbar-brand { font-family:'Cinzel',serif; }
+h2 { font-size:clamp(2rem,4vw,3.2rem); margin:8px 0 14px; color:#1a2b20; }
+h3 { font-size:1.2rem; }
+.navbar { background:rgba(12,20,16,.94); border-bottom:1px solid var(--line); backdrop-filter:blur(12px); }
+.navbar-brand { letter-spacing:3px; color:var(--gold)!important; font-size:1rem; }
+.nav-link { color:#e8e5d9!important; font-size:.88rem; margin-left:14px; }
+.nav-link:hover { color:var(--gold)!important; }
+.hero { min-height:690px; position:relative; display:flex; align-items:center; overflow:hidden; color:white; background: radial-gradient(ellipse at 75% 35%,rgba(93,125,74,.45),transparent 34%), linear-gradient(115deg,#0b1511 5%,#20392a 58%,#111d17 100%); }
+.hero:before,.hero:after { content:""; position:absolute; border:1px solid rgba(215,182,111,.2); border-radius:50%; width:560px;height:560px; right:-100px;top:70px; transform:rotate(28deg); }
+.hero:after { width:430px;height:430px;right:-35px;top:135px; border-style:dashed; }
+.hero-shade { position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,15,11,.75),transparent 90%); }
+.hero-content { position:relative;z-index:1;padding-top:80px; }
+.eyebrow { color:#a4864c; letter-spacing:3px; font-size:.72rem; font-weight:600; }
+.hero .eyebrow { color:var(--gold); }
+.hero h1 { font-size:clamp(3rem,8vw,6.5rem);line-height:1.05;letter-spacing:2px;margin:22px 0; }
+.hero h1 span { color:var(--gold); }
+.hero-copy { max-width:490px;color:#d2d8cf;font-size:1.05rem;margin-bottom:30px; }
+.hero-mark { position:absolute;right:17%;top:28%;font-size:clamp(9rem,25vw,21rem);color:rgba(215,182,111,.12);font-family:serif; }
+.btn-gold { background:var(--gold);color:#172018;border:1px solid var(--gold);border-radius:2px;padding:12px 22px;font-weight:600; }
+.btn-gold:hover { background:#e7cc8d;color:#101714;border-color:#e7cc8d; }
+.btn-gold span { margin-left:12px; }
+.section-pad { padding:94px 0; }
+.section-heading { margin-bottom:38px; }
+.section-heading p { color:#68736a;max-width:650px; }
+.lead-copy { font-size:1.25rem;line-height:1.55;color:#314337; }
+.quote-panel { background:#1a2a20;color:#eee9dc;padding:38px;min-height:270px;border:1px solid var(--line);position:relative; }
+.quote-panel p { font-family:'Cinzel',serif;font-size:1.35rem;line-height:1.6;margin:15px 0 25px; }
+.quote-panel small { color:var(--gold);letter-spacing:2px;font-size:.65rem; }
+.quote-symbol { color:var(--gold);font-size:2rem; }
+.dark-section { background:var(--night);color:var(--cream); }
+.dark-section h2,.dark-section h3 { color:var(--cream); }
+.dark-section .section-heading p,.muted { color:var(--muted); }
+.world-card { background:var(--deep);border:1px solid var(--line);padding:30px;height:100%;transition:.25s; }
+.world-card:hover,.character-card:hover { transform:translateY(-5px);border-color:var(--gold); }
+.world-icon { font-size:2rem;margin-bottom:18px; }
+.world-card h3 { color:var(--gold); }
+.world-card p { color:var(--muted);margin-bottom:0;font-size:.92rem; }
+.filter-row { display:flex;gap:9px;flex-wrap:wrap; }
+.filter-btn { background:transparent;border:1px solid #b5ad9b;padding:8px 18px;color:#455248;border-radius:30px;font-size:.85rem; }
+.filter-btn.active,.filter-btn:hover { background:#1a2a20;color:var(--gold);border-color:#1a2a20; }
+.character-card { border:1px solid #ddd7c8;background:#fff;height:100%;transition:.25s; }
+.character-photo { width:100%;height:220px;display:block;object-fit:cover;object-position:center 25%;background:#1a2a20; }\n.image-credits { color:#777e75;font-size:.72rem;margin-top:8px; }\n.image-credits a { color:#8a6b35; }
+
+
+
+.art-amber { background:linear-gradient(135deg,#3d2d1d,#b28a4d); }
+.art-green { background:linear-gradient(135deg,#142e25,#62815a); }
+.art-blue { background:linear-gradient(135deg,#1d2a3b,#607a83); }
+.character-info { padding:24px; }
+.character-info h3 { color:#1d3024;margin:7px 0; }\n.actor-name { color:#7a806f;font-size:.78rem;margin:-2px 0 12px; }\n.actor-name strong { color:#425344; }
+.character-info p { color:#647067;font-size:.9rem;min-height:82px; }
+.tag { color:#9a793e;letter-spacing:2px;font-size:.65rem;font-weight:700; }
+.favorite-btn { border:0;background:transparent;color:#87672f;padding:0;font-size:.85rem;font-weight:600; }
+.favorite-btn.saved { color:#a0443c; }
+.small-note { color:#777e75;font-size:.8rem; }
+.seasons-section { background:#e6e1d4; }
+.season-stats { display:grid;grid-template-columns:repeat(3,1fr);gap:10px; }
+.season-stats div { background:#1a2a20;color:white;padding:28px 15px;text-align:center;display:flex;flex-direction:column; }
+.season-stats strong { color:var(--gold);font-family:'Cinzel',serif;font-size:2rem; }
+.season-stats span { color:#c5cabb;font-size:.78rem; }
+.interactive-panel { background:var(--deep);border:1px solid var(--line);padding:28px; }
+.interactive-panel h3,.reviews-area h3 { color:var(--gold);margin-bottom:16px; }
+.form-label { color:#e9e5d9;font-size:.88rem; }
+.form-control { border-radius:2px;background:#101a14;border:1px solid #435347;color:#fff;padding:11px; }
+.form-control:focus { background:#101a14;color:#fff;border-color:var(--gold);box-shadow:0 0 0 .2rem rgba(215,182,111,.12); }
+.form-control::placeholder { color:#849084; }
+.favorite-list { list-style:none;padding:0;margin:20px 0; }
+.favorite-list li { border-bottom:1px solid rgba(255,255,255,.1);padding:9px 0;color:#e9e5d9;display:flex;justify-content:space-between; }
+.remove-favorite { border:0;background:none;color:#d7b66f; }
+.empty-state { color:#aeb8ad!important;font-style:italic; }
+.counter { color:var(--gold);font-size:.85rem; }
+.form-message { margin-top:14px;font-size:.9rem; }
+.form-message.success { color:#a9d3a6; }
+.form-message.error { color:#f0a7a0; }
+.reviews-area { border-top:1px solid var(--line);padding-top:25px; }
+.review-card { background:#1d2b23;border:1px solid var(--line);padding:18px;height:100%; }
+.review-card strong { color:var(--gold); }
+.review-card p { color:#d4d9d0;margin:8px 0 0; }
+.footer { background:#0b120e;color:#b8c0b4;padding:25px 0;font-size:.82rem; }
+.footer span:first-child { color:var(--gold);letter-spacing:2px;font-family:'Cinzel',serif; }
+.footer-credit { color:#778177;font-size:.72rem;margin-top:12px; }
+@media(max-width:767px) { .character-photo{height:250px}.hero{min-height:620px}.hero-mark{right:5%;top:40%;}.section-pad{padding:68px 0}.character-info p{min-height:0}.season-stats strong{font-size:1.5rem}.season-stats div{padding:20px 8px}.quote-panel{padding:28px} }
+
+.villain-section { background:#e7e0d3; }
+.villain-card { border-color:#c9bca8; }
+.villain-tag { color:#9b443c; }
+.classification { display:inline-block;background:#f0e8dc;color:#77443a;border-left:3px solid #9b443c;padding:6px 9px;font-size:.72rem;font-weight:600;line-height:1.4; }
+.villain-note { margin-top:24px;padding:18px 20px;background:#1a2a20;color:#d9dfd4;border-left:3px solid #b38b4a;font-size:.88rem; }
+.villain-note strong { color:#e0c27d; }
